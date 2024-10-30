@@ -1,1 +1,1 @@
-# rsschool-cv
+https://xellary.github.io/rsschool-cv/
