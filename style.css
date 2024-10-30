@@ -2,20 +2,17 @@
 
 /* RESET */
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -33,25 +30,21 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
 textarea,
@@ -59,35 +52,98 @@ select {
   font: inherit;
 }
 
-
 :root {
     --sidebar-background-color: #180A29;
-    --text-color: #889297;
+    --sidebar-text-color: #889297;
+    --main-text-color: #465967;
+    --main-header-color: #2E0F53;
+    --additional-color: #551A8B;
+    --main-background-color: #fff;
 }
 
 body {
-    color: var(--text-color);
+    color: var(--sidebar-text-color);
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--additional-color);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-wrapper {
+    display: flex;
+    max-width: 1920px;
+    border: 3px solid var(--sidebar-background-color);
+}
+
+.main {
+    padding: 1.5rem;
+    color: var(--main-text-color);
+    padding-left: 2.5rem;
+    background-color: var(--main-background-color);
+    
+}
+
+.main h1,
+.main h2 {
+    color: var(--main-header-color);
+}
+
+.main h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+}
+
+.main p,
+.main ul {
+    color: inherit;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    
+}
+
+.main hr {
+    margin: 0;
+    max-width: 300px;
+    margin-top: 1rem;
+    border: 1px solid var(--sidebar-text-color);
+}
+
+code {
+    font-size: 1.05rem;
 }
 
 .sidebar {
     max-width: 420px;
     background-color: var(--sidebar-background-color);
     padding: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .figure-photo {
     display: flex;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 
 .photo {
     max-width: 250px;
     height: auto;
     border-radius: 50%;
-    border: 3px solid var(--text-color);
+    border: 3px solid var(--sidebar-text-color);
 }
 
 .sidebar ul {

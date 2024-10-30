@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="sidebar">
-        <figure class="figure-photo">
-            <img class="photo" src="assets/img/photo.jpg" alt="" width="1920px" height="1920px">
-        </figure>
-        <h2>Contacts</h2>
-        <ul>
-            <li>Email: eugenebiruk1@gmail.com</li>
-            <li>Telegram: @ev_geniusb</li>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner-wrapper">
+        <div class="sidebar">
+          <figure class="figure-photo">
+            <img class="photo" src="assets/img/photo.jpg" alt="" />
+          </figure>
+          <h2>Contacts</h2>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:eugenebiruk1@gmail.com">eugenebiruk1@gmail.com</a>
+            </li>
+            <li>Telegram: <a href="https://t.me/ev_geniusb">@ev_geniusb</a></li>
             <li>Github: <a href="https://github.com/xellary">xellary</a></li>
-            <li>Discord: gus__fring</li>
-        </ul>
+            <li>Discord: <a href="">gus__fring</a></li>
+          </ul>
 
-        <h2>Skills</h2>
-        <ul>
+          <h2>Skills</h2>
+          <ul>
             <li>HTML5</li>
             <li>CSS3/SASS</li>
             <li>JavaScript Basics</li>
             <li>Git</li>
             <li>Java Basics</li>
-        </ul>
+          </ul>
 
-        <h2>Languages</h2>
-        <ul>
+          <h2>Languages</h2>
+          <ul>
             <li>Russian (native)</li>
             <li>English (B1)</li>
-        </ul>
+          </ul>
+        </div>
+
+        <main class="main">
+          <h1>Evgeniy Birukov</h1>
+
+          <h2>Junior Frontend Developer</h2>
+          <hr />
+          <h2>About Me</h2>
+          <p>
+            I study computer science and engineering. I'm responsible, work well
+            in a team, and love learning new things, especially in frontend
+            development. I hope my effort will help me succeed in this course!
+          </p>
+          <hr />
+          <h2>Education</h2>
+          <ul>
+            <li>University: Moscow Aviation Institute, Computer Science</li>
+            <li>
+              Courses: <a href="https://www.freecodecamp.org/">FreeCodeCamp</a>,
+              <a href="https://www.w3schools.com/">W3Schools</a>
+            </li>
+          </ul>
+          <hr />
+          <h2>Code Example</h2>
+          <p>
+            Persistent Bugger Kata from Codewars: Write a function,
+            <span>persistence</span>, that takes in a positive parameter
+            <span>num</span> and returns its multiplicative persistence, which
+            is the number of times you must multiply the digits in
+            <span>num</span> until you reach a single digit.
+          </p>
+          <pre><code>
+function persistence(num) {
+    let persist = 0;
+    while (num.toString().length != 1) {
+        let mul = 1;
+        for (let i = 0; i < num.toString().length; i++) {
+        mul *= num.toString()[i];
+        }
+        num = mul;
+        persist++;
+    }
+    return persist;
+}
+          </code></pre>
+        </main>
+      </div>
     </div>
-</body>
+  </body>
 </html>
