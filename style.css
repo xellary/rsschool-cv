@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+/* RESET */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+:root {
+    --sidebar-background-color: #180A29;
+    --text-color: #889297;
+}
+
+body {
+    color: var(--text-color);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.sidebar {
+    max-width: 420px;
+    background-color: var(--sidebar-background-color);
+    padding: 1.5rem;
+}
+
+.figure-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--text-color);
+}
+
+.sidebar ul {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
