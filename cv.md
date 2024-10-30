@@ -34,3 +34,10 @@ function persistence(num) {
   return persist;
 }
 ```
+## Education
+* University: Moscow Aviation Institute, Computer Science  
+* Courses: [FreeCodeCamp](https://www.freecodecamp.org/), [W3Schools](https://www.w3schools.com/)
+
+## Languages
+* Russian (native)
+* English (B1)
